@@ -1,0 +1,64 @@
+<body>
+  <div class="right-container">
+    <header>
+
+
+      <h1>Resolutions ({{incompleteCount}} Unfinished)</h1>
+
+      <div class="filter-options">
+        <label class="only-user">
+          <input type="checkbox"/>
+          Only My Tasks
+        </label>
+        <label class="hide-completed">
+          <input type="checkbox"/>
+          Hide Completed Tasks
+        </label>
+      </div>
+
+      {{> loginButtons}}
+
+      {{#if currentUser}}
+        <form class="new-task">
+            <input type="text" name="text" placeholder="Type to add new Tasks"/>
+        </form>
+      {{/if}}
+
+    </header>
+
+    <ul>
+      {{# each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="left-container">
+    <div class="description">
+      <header>Resolution Bucket List</header>
+      <p>New years resolutions give you one large thing to strive for, many don't get achieved.
+        If you do achieve your goal, then what? Whats next? With bucket list resolutions you
+      set (approximately) 30 goals. Then shoot for a mere 10% of your goals (round up). If you finish 10%,
+      keep going! The amount you can get done in a year is shocking.</p>
+      <ul>Tips:
+        <li> It is best if you have a single personal
+          <a href="https://lifehacker.com/focus-your-ambitions-with-the-lifehacker-hierarchy-of-g-5912971">
+            high level goal</a> that most of these help achieve.
+        </li>
+        <li> Make goals that are ambitious, even if you complete only 10% you should be proud.</li>
+        <li> Make goals that are measurable and have clear end states (i.e. "run a marathon" or "read 15 books").</li>
+        <li> Repeating goals are extremely difficult to achieve, use them sparingly (i.e. "do this every day/week").</li>
+        <li> A key part of bucket list resolutions is being able to look back and see all you have done.</li>
+        <li> Don't be too distraught if your goals change completely throughout the year. Life happens, reflect on what you did do and set new goals for the next.</li>
+      </ul>
+      <p>Ray Batts told me about his resolution bucket list back in 2013 at a <a href="https://www.facebook.com/GameDevDrinkUp">GameDevDrinkUp</a>
+        , I have been doing it ever since. It helps me look back and see how I have changed and grown, and what I have achieved.</p>
+      <footer>
+        <p>First meteor app by <a href="http://www.sjmosley.com">SJMosley</a>, built on top of
+          <a href="https://www.meteor.com/tutorials/blaze/creating-an-app">meteor tutorial</a>
+        <br/>
+          In development: working on email reminders and new task types.</p>
+      </footer>
+    </div>
+  </div>
+</body>

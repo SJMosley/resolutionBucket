@@ -1,0 +1,173 @@
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  background-color: #315481;
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.right-container {
+  width: 50%;
+  margin: 0 auto;
+  float: right;
+  min-height: 100%;
+  background: white;
+}
+
+.right-container header {
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+  position: relative;
+  display: block;
+}
+
+.right-container h1 {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-right: 1em;
+}
+
+.filter-options{
+  display: inline-block;
+}
+
+#login-buttons {
+  padding: 10px 0px;
+  position: relative;
+  display: block;
+}
+
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+.new-task input {
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 80px;
+  font-size: 1em;
+}
+
+.new-task input:focus{
+  outline: 0;
+}
+
+.right-container ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+
+.right-container li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+}
+
+.right-container li .text {
+  margin-left: 10px;
+}
+
+.right-container li.checked {
+  color: #888;
+}
+
+.right-container li.checked .text {
+  text-decoration: line-through;
+}
+
+.right-container li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+
+header .hide-completed {
+  flex: auto;
+}
+
+.toggle-private {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+
+  .search {
+    width: 150px;
+    clear: both;
+  }
+
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
+
+.left-container {
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+  min-height: 100%;
+}
+.description{
+  margin:20px;
+  font-size: 1.1em;
+}
+.description header{
+  font-size: 2em;
+  color: white;
+}
+
+.description p{
+  color: white;
+}
+
+.description ul{
+  padding: 0px 10px;
+  color: white;
+}
+
+.description li{
+  padding: 4px 0px;
+  color: white;
+}
+
+.description a{
+  color: white;
+}
+
+.description footer{
+    position: absolute;
+    padding-bottom: 10px;
+    bottom: 0;
+    color: white;
+}

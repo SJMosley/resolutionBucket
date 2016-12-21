@@ -1,0 +1,88 @@
+<template name="task">
+  <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
+
+    {{#if isOwner}}
+    <button class="delete">&times;</button>
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked"/>
+
+      <button class="toggle-private">
+        {{#if private}}
+        Private
+        {{else}}
+        Public
+        {{/if}}
+      </button>
+    {{else}}
+      {{#if isDeveloper}}
+      <button class="delete">&times;</button>
+      <button class="toggle-private">
+        {{#if private}}
+        Private
+        {{else}}
+        Public
+        {{/if}}
+      </button>
+      {{else}}{{#if currentUser}}
+      <button class="add-mine">Add to my goals</button>
+      {{/if}}
+      {{/if}}
+    {{/if}}
+
+
+
+    <span class="text"><strong>{{username}}</strong> - {{text}}</span>
+  </li>
+</template>
+
+<!-- //numerical tasks like "Run 100 miles"
+//Display as "Run 100 miles (0/100)" with ending number updatable
+<template name="number-task">
+  <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
+
+    {{#if isOwner}}
+    <button class="delete">&times;</button>
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked"/>
+
+      <button class="toggle-private">
+        {{#if private}}
+        Private
+        {{else}}
+        Public
+        {{/if}}
+      </button>
+    {{else }}{{#if currentUser}}
+    <button class="add-mine">Add to my goals</button>
+    {{/ if}}{{/ if}}
+
+
+    <span class="text"><strong>{{username}}</strong> - {{text}}</span>
+  </li>
+</template>
+
+//repetitive task, happens daily, weekly, or monthly (dropdown to find out)
+//ideally sends out email updates
+<template name="recurring-task">
+  <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
+
+    {{#if isOwner}}
+    <button class="delete">&times;</button>
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked"/>
+
+      <button class="toggle-private">
+        {{#if private}}
+        Private
+        {{else}}
+        Public
+        {{/if}}
+      </button>
+    {{else }}{{#if currentUser}}
+    <button class="add-mine">Add to my goals</button>
+    {{/ if}}{{/ if}}
+
+
+    <span class="text"><strong>{{username}}</strong> - {{text}}</span>
+  </li>
+</template> -->
