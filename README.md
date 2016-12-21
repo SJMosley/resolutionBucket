@@ -13,7 +13,10 @@ New years resolutions give you one large thing to strive for, many don't get ach
         <li> Don't be too distraught if your goals change completely throughout the year. Life happens, reflect on what you did do and set new goals for the next.</li>
       </ul>
 
-Located at http://resolutionbucket.fallfaster.com, Hosted with Galaxy (https://www.meteor.com/hosting). I will be leaving it up until January 31st. Taking it down after because I don't want to pay for hosting it.
+Ray Batts told me about his resolution bucket list back in 2013 at a <a href="https://www.facebook.com/GameDevDrinkUp">GameDevDrinkUp</a>
+        , I have been doing it ever since. It helps me look back and see how I have changed and grown, and what I have achieved.
+
+Located at http://resolutionbucket.fallfaster.com, Hosted with <a href="https://www.meteor.com/hosting">Galaxy</a>. I will be leaving it up until January 31st. Taking it down after because I don't want to pay for hosting it.
 
 Feel free to use any of the code or host your own implementation. There is a lot that could be added to this and I may eventually move the hosting to a tiny server of my own so that I can keep it up for good and add email reminders of goals.
 
